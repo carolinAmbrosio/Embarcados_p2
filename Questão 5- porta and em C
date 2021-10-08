@@ -1,0 +1,21 @@
+#include <stdio.h>
+//inicio da função principal
+int main() {
+
+	typedef enum { false, true } bool;
+	bool a, b, x;//declaração das variáveis
+
+    //entrada dos dados
+	printf("A: ");
+	scanf("%i", &a);		
+    printf("B: ");
+    scanf("%i", &b);
+    
+	if (a == 1 && b == 1){ //condições da porta and
+	    x = 1;
+	}else{
+	    x = 0;
+	}					
+
+	printf("\t!x: %d", x);	//saida dos dados
+} // fim da função principal
