@@ -1,0 +1,40 @@
+fn main() { // Inicio da função principal
+    // variaveis em boleano e mutáveis
+    let  mut a:bool;
+    let mut b:bool;
+    let mut x:bool;
+    
+    //true = 1 e false = 0
+    
+    // Tabela da Verdade Porta AND
+    // 0 & 0 = 0
+    // 1 & 0 = 0
+    // 0 & 1 = 0
+    // 1 & 1 = 1
+    
+    
+    // No caso: 1 & 0
+    a = true;
+    b = false;
+    x = !(a& b);
+    println!("NOT(A AND B) (quando A = 1 e B = 0): {}\n",x);
+    
+    // No caso: 0 & 1
+    a = false;
+    b = true;
+    x = !(a & b);
+    println!("NOT(A AND B) (quando A = 0 e B = 1): {}\n",x);
+    
+    // No caso: 0 & 0
+    a = false;
+    b = false;
+    x = !(a & b);
+    println!("NOT(A AND B) (quando A = 1 e B = 1): {}\n",x);
+    
+    // No caso: 1 & 1
+    a = true;
+    b = true;
+    x = !(a & b);
+    println!("NOT(A AND B) (quando A = 0 e B = 0): {}\n",x);
+   
+} // Fim da função principal
