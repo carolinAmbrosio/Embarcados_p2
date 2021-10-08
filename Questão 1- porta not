@@ -1,11 +1,11 @@
-entity And is
+entity Not is
 	 port(
 		 a : in bit;
 		 x : out bit
 	     );
-end And;
+end Not;
 
-architecture And of And is
+architecture Not of And is
 begin
 
 	a <= NOT a;
@@ -14,4 +14,4 @@ begin
 	
 	x <=NOT x;
 
-end And;
+end Not;
