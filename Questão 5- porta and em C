@@ -3,7 +3,7 @@
 int main() {
 
 	typedef enum { false, true } bool;
-	bool a, b, x;//declaração das variáveis
+	bool a, b, x, aux;//declaração das variáveis
 
     //entrada dos dados
 	printf("A: ");
@@ -15,7 +15,7 @@ int main() {
 	    x = 1;
 	}else{
 	    x = 0;
-	}					
+	}aux=!x;					
 
-	printf("\t!x: %d", x);	//saida dos dados
+	printf("\t!x: %d", aux);	//saida dos dados
 } // fim da função principal
